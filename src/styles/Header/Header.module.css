@@ -1,0 +1,66 @@
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.globalNewsLink a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    margin-right: 150px;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+.searchContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+
+.searchInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.stateListContainer {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.stateContainer {
+    display: none;
+    opacity: 0;
+    transform: translateY(-20px);  
+    transition: opacity 0.3s ease, transform 0.3s ease;  
+}
+
+.stateContainer.visible {
+    display: block;
+    opacity: 1;
+    transform: translateY(0); 
+}

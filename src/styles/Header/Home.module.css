@@ -1,0 +1,92 @@
+.homeContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.aboutApp {
+  font-size: 44px;  
+  color: black;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.iconList {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  margin-bottom: 20px; 
+}
+
+.iconList img {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.iconList img:hover {
+  transform: scale(1.14);
+}
+
+.active {
+  transform: scale(1.14);
+}
+
+.description {
+  font-size: 24px;
+  color: #333;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  min-height: 60px;
+  width: 80%; 
+  text-align: center;
+  background-color: white;
+  margin-top: 20px; 
+}
+
+.technologies {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.technologies a {
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 10px;
+
+}
+
+.technologies a:hover {
+  text-decoration: underline;
+}
+.iconList img {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  animation: pulse 2s  ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+}
+.techIcons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+}

@@ -1,0 +1,88 @@
+.newsList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.paginationButton {
+  padding: 10px;
+  margin: 0 10px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+  transition: background-color 0.3s ease; /* Smooth button transition */
+}
+
+.paginationButton:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.newsCard {
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%; /* Make the card take full width */
+  max-width: 1050px; /* Limit the width of the card */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row; /* Image on left, content on right */
+  justify-content: space-between;
+}
+
+.newsCard:hover {
+  transform: translateY(-10px);
+}
+
+.newsImage {
+  width: 300px;
+  object-fit: cover;
+  border-radius: 8px 0 0 8px;
+}
+
+.newsContent {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.newsTitle {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.newsDescription {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 10px;
+  flex-grow: 1;
+}
+
+.newsAuthor {
+  font-size: 0.9em;
+  color: #777;
+  margin-right: 10px;
+}
+
+.newsPublishDate {
+  font-size: 0.8em;
+  color: #888;
+}

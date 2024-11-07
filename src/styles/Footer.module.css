@@ -1,6 +1,6 @@
 html, body {
   height: 100%;  
-  margin: 0;     
+  margin: 0;   
   display: flex;
   flex-direction: column;  
 }
@@ -8,27 +8,9 @@ html, body {
 .App {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;       
-  min-height: 100vh;  
-}
-
-.main-content {
   flex-grow: 1;  
 }
 
-/* Nagłówek */
-.header {
-  position: relative;
-  z-index: 10;
-  background-color: white;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Stopka */
 .footer {
   background-color: #333;
   color: #fff;

@@ -1,7 +1,7 @@
 // SearchBar.js
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { useNavigate } from 'react-router-dom'; 
+import { useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
 import styles from '../../styles/Header/SearchBar.module.css';
 import { fetchCities } from '../../services/api.js'; 
 

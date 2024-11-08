@@ -34,7 +34,7 @@ const NewsList = ({ cityId, stateId, isGlobal }) => {
         if (Array.isArray(response.data)) {
           setNews(response.data);
         } else {
-          setError('API response does not contain news items.');
+          setError('');
         }
       } catch (error) {
         console.error('Error fetching news:', error);

@@ -4,6 +4,7 @@ import SearchBar from './SearchBar';
 import StateList from './StateList';
 import { fetchStates } from '../../services/api';
 import styles from '../../styles/Header/Header.module.css';
+import logo from '../../img/logo.png'
 
 function Header() {
   const [states, setStates] = useState([]);
@@ -23,7 +24,7 @@ function Header() {
     <header className={styles.header}>
       <div className={styles.logoContainer}>
         <a href="/">
-          <img src="/src/img/logo.png" alt="Logo" className={styles.logo} />
+          <img src={logo} alt="Logo" className={styles.logo} />
         </a>
       </div>
       <div className={styles.searchContainer}>

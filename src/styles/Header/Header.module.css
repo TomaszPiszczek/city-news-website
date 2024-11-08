@@ -32,16 +32,34 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    flex-grow: 1;
+    flex-grow: 1;  /* Rozciąga kontener w poziomie */
+    min-width: 200px; /* Minimalna szerokość kontenera wyszukiwania */
 }
 
+/* Pole wyszukiwania */
 .searchInput {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
+    width: 100%;  /* Elastyczna szerokość - wypełnia dostępne miejsce */
+    padding: 10px; /* Odstępy w polu tekstowym */
+    font-size: 16px; /* Domyślny rozmiar czcionki */
+    border: 1px solid #ccc; /* Obramowanie */
+    border-radius: 5px; /* Zaokrąglone rogi */
+    box-sizing: border-box; /* Zapewnia, że padding jest wliczany do szerokości */
+    min-width: 200px;  /* Minimalna szerokość pola wyszukiwania */
+}
+
+/* Media queries dla mniejszych ekranów */
+@media (max-width: 768px) {
+    .searchInput {
+        font-size: 14px;  /* Mniejsza czcionka na ekranach średniej wielkości */
+        padding: 8px; /* Mniejsze odstępy */
+    }
+}
+
+@media (max-width: 480px) {
+    .searchInput {
+        font-size: 14px; /* Ustawienie mniejszego rozmiaru czcionki na urządzeniach mobilnych */
+        padding: 8px; /* Ustawienie mniejszych odstępów */
+    }
 }
 
 .stateListContainer {

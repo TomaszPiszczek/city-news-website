@@ -38,7 +38,7 @@ const NewsList = ({ cityId, stateId, isGlobal }) => {
         }
       } catch (error) {
         console.error('Error fetching news:', error);
-        setError('Failed to fetch news');
+        setError('');
       } finally {
         setLoading(false);
       }
